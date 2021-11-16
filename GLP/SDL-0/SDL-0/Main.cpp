@@ -89,11 +89,11 @@ int main(int argc = 0, char** argv = nullptr) {
     vertexShader = glCreateShader(GL_VERTEX_SHADER);
 
 
-    //now that we have a vertex shader, let’s put the code text inside
+    //now that we have a vertex shader, letâ€™s put the code text inside
     glShaderSource(vertexShader, 1, &vertexShaderSource, NULL);
 
 
-    //aaaaand… Compile !
+    //aaaaandâ€¦ Compile !
     glCompileShader(vertexShader);
 
 
@@ -163,8 +163,7 @@ int main(int argc = 0, char** argv = nullptr) {
     // Quit
     SDL_DestroyWindow(Window);
     SDL_GL_DeleteContext(Context);
-
-
+    
     return 0;
 }
 
@@ -180,9 +179,5 @@ string LoadShader(string fileName) {
     while (getline(myFile, line)) {
         fileText += line + '\n';
     }
-    
-    cout << fileText;
-    cout << "c style : \n";
-    ptr = fileText.c_str();
     return fileText;
 }
